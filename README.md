@@ -46,9 +46,6 @@ npm run build
 
 # プロダクションサーバー起動
 npm run start
-
-# リンター実行
-npm run lint
 ```
 
 ## プロジェクト構造
