@@ -23,9 +23,9 @@ export default function LicensePage() {
               本マップは、営利目的・非営利目的問わず、すべての配信サービスでの動画投稿・ライブ配信について一切の制限を行いません。
             </p>
             <p className="mb-4">
-              視聴者へのマップ名・URLの記載は必須ではないですが、興味を持った視聴者の方々にも遊んで頂けると嬉しい限りですので、可能であれば記載をお願いいたします。（ただし、あくまで任意です。）
+              概要欄へのマップ名・URL の記載は必須ではないですが、興味を持った視聴者の方々にも遊んで頂けると嬉しい限りですので、可能であれば記載をお願いいたします。(ただし、あくまで任意です。)
             </p>
-            <p>他の規格についても必須ではないですが、ご一報頂けると開発チームが大喜びして開発の励みとなります。</p>
+            <p>利用の報告についても必須ではないですが、ご一報頂けると開発チームが大喜びして開発の励みとなります。</p>
           </CardContent>
         </Card>
 
@@ -40,7 +40,7 @@ export default function LicensePage() {
               再配布する場合は、当サイトのURLを記載いただきますようお願い致します。
             </p>
             <p>
-              ただし、データパックやリソースパックを含んだ再配布を行う場合はそのライセンスに従ってください。
+              ただし、データパックやリソースパックを含んで再配布を行う場合はそのライセンスに従ってください。
               <br />
               再配布せず、動画投稿やライブ配信のみで利用する場合は当サイトのURLを記載する必要はございません。
             </p>
@@ -52,21 +52,21 @@ export default function LicensePage() {
             <CardTitle className="text-2xl">データパックのライセンス</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">以下に記載があるものをご確認ください。</p>
+            <p className="mb-4">以下に記載がありますのでご確認ください。</p>
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <a href="#" className="text-cyan-600 hover:underline">
+                <a href="https://github.com/ProjectTSB/TheSkyBlessing#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" className="text-cyan-600 hover:underline">
                   ProjectTSB/TheSkyBlessing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cyan-600 hover:underline">
+                <a href="https://github.com/ProjectTSB/Asset#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" className="text-cyan-600 hover:underline">
                   ProjectTSB/Asset
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cyan-600 hover:underline">
-                  ProjectTSB/Asset.AnimatedJava
+                <a href="https://github.com/ProjectTSB/Asset-AnimatedJava#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" className="text-cyan-600 hover:underline">
+                  ProjectTSB/Asset-AnimatedJava
                 </a>
               </li>
             </ul>
@@ -78,10 +78,10 @@ export default function LicensePage() {
             <CardTitle className="text-2xl">リソースパックのライセンス</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">以下に記載があるものをご確認ください。</p>
+            <p className="mb-4">以下に記載がありますのでご確認ください。</p>
             <ul className="list-disc list-inside">
               <li>
-                <a href="#" className="text-cyan-600 hover:underline">
+                <a href="https://github.com/ProjectTSB/TSB-ResourcePack" className="text-cyan-600 hover:underline">
                   ProjectTSB/TSB-Resourcepack
                 </a>
               </li>
