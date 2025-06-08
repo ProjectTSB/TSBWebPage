@@ -1,9 +1,12 @@
+"use client"
+
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { ExclamationTriangleIcon, DownloadIcon } from "@radix-ui/react-icons"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { ExclamationTriangleIcon, DownloadIcon, InfoCircledIcon } from "@radix-ui/react-icons"
 import Link from "next/link"
 
 export default function DownloadPage() {
@@ -48,12 +51,90 @@ export default function DownloadPage() {
                 <p>1.19 ~ 1.19.2</p>
               </div>
 
-              <Button asChild className="w-full">
-                <Link href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/TheSkyBlessing.zip">
-                  <DownloadIcon className="mr-2 h-4 w-4" />
-                  安定版をダウンロード
-                </Link>
-              </Button>
+              <div>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button className="w-full">
+                      <DownloadIcon className="mr-2 h-4 w-4" />
+                      安定版をダウンロード
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                      <DialogTitle>ダウンロード・詳細情報</DialogTitle>
+                    </DialogHeader>
+                    
+                    <div className="space-y-6">
+                      {/* ダウンロードボタン */}
+                      <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
+                        <h3 className="font-bold mb-3 text-green-800 dark:text-green-300">マップ本体</h3>
+                        <Link 
+                            href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/TheSkyBlessing.zip" 
+                            className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                          安定板をダウンロード
+                        </Link>
+                      </div>
+
+                      {/* 過去バージョンからのアップデート情報 */}
+                      <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg">
+                        <h3 className="font-bold mb-3 text-blue-800 dark:text-blue-300">過去バージョンからのアップデート</h3>
+                        <div className="space-y-3 text-sm">
+                          <div>
+                            <span className="font-semibold">データパック:</span>
+                            <br />
+                            <Link 
+                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/datapacks.zip" 
+                              className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              datapacks.zip をダウンロード
+                            </Link>
+                          </div>
+                          <div>
+                            <span className="font-semibold">リソースパック:</span>
+                            <br />
+                            <Link 
+                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/resources.zip" 
+                              className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              resources.zip をダウンロード
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* マルチプレイのリソースパック情報 */}
+                      <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded-lg">
+                        <h3 className="font-bold mb-3 text-purple-800 dark:text-purple-300">マルチプレイのリソースパック情報</h3>
+                        <div className="space-y-3 text-sm">
+                          <div>
+                            <span className="font-semibold">URL:</span>
+                            <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
+                              <code className="text-xs break-all">
+                                https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v0.1.6/resources.zip
+                              </code>
+                            </div>
+                          </div>
+                          <div>
+                            <span className="font-semibold">SHA1:</span>
+                            <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
+                              <code className="text-xs">
+                                ed1e3fd2c5eaad147d8d55b17ab1585121be59c9
+                              </code>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </div>
             </CardContent>
           </Card>
 
@@ -81,7 +162,7 @@ export default function DownloadPage() {
               <Button asChild className="w-full">
                 <Link href="https://discord.com/invite/vPqHuQNMEv">
                   <DownloadIcon className="mr-2 h-4 w-4" />
-                  Discord サーバーで入手
+                  Discord サーバーでダウンロード
                 </Link>
               </Button>
             </CardContent>
