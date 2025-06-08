@@ -42,10 +42,7 @@ npx next dev
 
 ```bash
 # プロダクションビルド
-npm run build
-
-# プロダクションサーバー起動
-npm run start
+npx next build
 ```
 
 ## プロジェクト構造
