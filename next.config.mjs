@@ -10,6 +10,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  webpack: (config, { dev, isServer }) => {
+    // Cloudflare Pagesでのファイルサイズ制限を回避するため、キャッシュを無効化
+    if (!dev) {
+      config.cache = false;
+    }
+    return config;
+  },
 }
 
 export default nextConfig
