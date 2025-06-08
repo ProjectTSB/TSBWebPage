@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { ExclamationTriangleIcon, DownloadIcon, InfoCircledIcon } from "@radix-ui/react-icons"
-import { Link } from "react-router-dom"
+import { ExclamationTriangleIcon, DownloadIcon } from "@radix-ui/react-icons"
 
 export default function DownloadPage() {
   return (
@@ -16,7 +15,7 @@ export default function DownloadPage() {
         <h1 className="text-4xl font-bold mb-8">ダウンロード</h1>
 
         <Alert className="mb-8 border-amber-500 bg-amber-50 dark:bg-amber-950/20">
-          <ExclamationTriangleIcon className="h-4 w-4 mt-0.5" />
+          <ExclamationTriangleIcon className="h-4 w-4 mt-1.5" />
           <AlertTitle className="text-amber-800 dark:text-amber-300 text-lg font-bold">
             【重要】安定版と最新版について
           </AlertTitle>

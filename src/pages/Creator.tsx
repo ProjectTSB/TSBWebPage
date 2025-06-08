@@ -11,7 +11,6 @@ export default function CreatorPage() {
 
       <main className="flex-1 py-12 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
-          <PersonIcon className="h-8 w-8 text-sky-600" />
           <h1 className="text-4xl font-bold">製作者一覧</h1>
         </div>
 
