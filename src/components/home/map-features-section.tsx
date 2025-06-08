@@ -42,7 +42,7 @@ export function MapFeaturesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {mapFeatures.map((feature, index) => (
             <FeatureCard
-              key={feature.id}
+              key={index}
               feature={feature}
               accentColor={featureStyles[index % featureStyles.length].accentColor}
               accentColor2={featureStyles[index % featureStyles.length].accentColor2}
