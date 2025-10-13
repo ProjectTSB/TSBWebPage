@@ -1,4 +1,4 @@
-import SS1 from "@/assets/screenshots/SS1.png?format=webp&h=360&imagetools"
+import KeyVisual from "@/assets/screenshots/key_visual.png?format=webp&h=360&imagetools"
 import Logo from "@/assets/tsb_logo_2.svg"
 
 export function HeroSection() {
@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="relative w-full h-[80vh] overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 z-10" />
       <img
-        src={SS1}
+        src={KeyVisual}
         alt="The Sky Blessing"
         className="absolute inset-0 w-full h-full object-cover"
       />
