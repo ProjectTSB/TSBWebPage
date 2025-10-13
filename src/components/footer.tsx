@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <div className="flex items-center gap-2">
             <img
-              src="/TSB_icon_tuuka.png"
+              src="/tsb_icon.png"
               alt="The Sky Blessing"
               className="h-8 w-8"
             />
@@ -42,11 +42,11 @@ export default function Footer() {
             <h3 className="font-medium text-blue-600">コミュニティ</h3>
             <div className="flex flex-col gap-1">
               {socialLinks.map((social) => (
-                <a 
+                <a
                   key={social.name}
-                  href={social.path} 
-                  className="text-sm text-muted-foreground hover:text-blue-500" 
-                  target="_blank" 
+                  href={social.path}
+                  className="text-sm text-muted-foreground hover:text-blue-500"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   {social.name}
@@ -75,13 +75,13 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => {
               const IconComponent = social.icon
-              
+
               return (
-                <a 
+                <a
                   key={social.name}
-                  href={social.path} 
+                  href={social.path}
                   className="text-muted-foreground hover:text-foreground"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <IconComponent className="h-5 w-5" />
@@ -94,4 +94,4 @@ export default function Footer() {
       </div>
     </footer>
   )
-} 
+}

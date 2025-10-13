@@ -8,7 +8,7 @@ export function Logo({ showText = true }: LogoProps) {
   return (
     <Link to="/" className="flex items-center gap-2">
       <img
-        src="/TSB_icon_tuuka.png"
+        src="/tsb_icon.png"
         alt="The Sky Blessing"
         className="h-8 w-8"
       />
@@ -17,4 +17,4 @@ export function Logo({ showText = true }: LogoProps) {
       )}
     </Link>
   )
-} 
+}
