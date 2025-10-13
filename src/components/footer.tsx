@@ -1,3 +1,4 @@
+import Icon from "@/assets/tsb_icon.png?format=webp&h=64&imagetools"
 import { Link } from "react-router-dom"
 import { socialLinks } from "@/data/social-links"
 
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <div className="flex items-center gap-2">
             <img
-              src="/tsb_icon.png"
+              src={Icon}
               alt="The Sky Blessing"
               className="h-8 w-8"
             />
