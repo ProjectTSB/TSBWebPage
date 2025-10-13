@@ -1,4 +1,4 @@
-import Tatuharu from "@/assets/creators/tatuharu.jpg"
+import Tatuharu from "@/assets/creators/tatuharu.jpg?format=webp&h=256&imagetools"
 
 export interface Creator {
   name: string

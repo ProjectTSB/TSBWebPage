@@ -1,4 +1,4 @@
-import SS1 from "@/assets/screenshots/SS1.png"
+import SS1 from "@/assets/screenshots/SS1.png?format=webp&h=360&imagetools"
 import Logo from "@/assets/tsb_logo_2.svg"
 
 export function HeroSection() {

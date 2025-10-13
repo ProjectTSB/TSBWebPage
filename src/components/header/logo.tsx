@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Icon from "@/assets/tsb_icon.png"
+import Icon from "@/assets/tsb_icon.png?format=webp&h=256&imagetools"
 
 interface LogoProps {
   showText?: boolean

@@ -1,5 +1,5 @@
-import SS2 from "@/assets/screenshots/SS2.png"
-import SS3 from "@/assets/screenshots/SS3.png"
+import SS2 from "@/assets/screenshots/SS2.png?format=webp&h=360&imagetools"
+import SS3 from "@/assets/screenshots/SS3.png?format=webp&h=360&imagetools"
 
 export interface MapFeature {
   title: string

@@ -1,4 +1,4 @@
-import Icon from "@/assets/tsb_icon.png"
+import Icon from "@/assets/tsb_icon.png?format=webp&h=64&imagetools"
 import { Link } from "react-router-dom"
 import { socialLinks } from "@/data/social-links"
 
