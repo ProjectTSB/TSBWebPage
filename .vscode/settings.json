@@ -1,0 +1,11 @@
+{
+  "files.eol": "\r\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.encoding": "utf8",
+  "[javascript][java-properties][typescript][typescriptreact][json][css][postcss]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+}
