@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Icon from "@/assets/tsb_icon.png"
 
 interface LogoProps {
   showText?: boolean
@@ -8,7 +9,7 @@ export function Logo({ showText = true }: LogoProps) {
   return (
     <Link to="/" className="flex items-center gap-2">
       <img
-        src="/tsb_icon.png"
+        src={Icon}
         alt="The Sky Blessing"
         className="h-8 w-8"
       />
