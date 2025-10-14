@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { InfoCircledIcon } from "@radix-ui/react-icons"
 
 export default function LicensePage() {
   return (
@@ -13,10 +12,7 @@ export default function LicensePage() {
 
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-2xl flex items-center">
-              <InfoCircledIcon className="h-4 w-4" />
-              動画投稿やライブ配信
-            </CardTitle>
+            <CardTitle className="text-2xl flex items-center">動画投稿やライブ配信</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-4">
@@ -93,4 +89,4 @@ export default function LicensePage() {
       <Footer />
     </div>
   )
-} 
+}
