@@ -1,5 +1,5 @@
 import KeyVisual from "@/assets/screenshots/key_visual.png?format=webp&h=360&imagetools"
-import Logo from "@/assets/tsb_logo_2.svg"
+import Logo from "@/assets/tsb_logo.svg"
 
 export function HeroSection() {
   return (
