@@ -1,4 +1,4 @@
-import KeyVisual from "@/assets/screenshots/key_visual.png?format=webp&h=360&imagetools"
+import KeyVisual from "@/assets/screenshots/key_visual.png?format=webp&h=720&imagetools"
 import Logo from "@/assets/tsb_logo.svg"
 
 export function HeroSection() {
