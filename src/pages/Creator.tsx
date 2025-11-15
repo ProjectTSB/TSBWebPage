@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { creators } from "@/data/creators"
 
 export default function CreatorPage() {
-  // 名前でソート（日本語対応）
   const sortedCreators = [...creators].sort((a, b) =>
     a.name.localeCompare(b.name, 'ja', { numeric: true, sensitivity: 'base' })
   )
