@@ -31,7 +31,7 @@ export const mapFeatures: MapFeature[] = [
   {
     title: "試練と報酬が待つ数々の「浮島」",
     description:
-      "この世界には、60 を超えるさまざまな特徴を持つ「浮島」が空に点在しています。\n各島には、凶悪な敵や、豪華な報酬、呪われた神器が存在し、あなたが訪れるのを待っています",
+      "この世界には、60 を超えるさまざまな特徴を持つ「浮島」が空に点在しています\n各島には、凶悪な敵や、豪華な報酬、呪われた神器が存在し、あなたが訪れるのを待っています",
     images: [IslandsA, IslandsB, IslandsC, IslandsD, IslandsE, IslandsF, IslandsG, IslandsH],
   },
   {
