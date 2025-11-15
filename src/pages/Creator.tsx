@@ -32,21 +32,23 @@ export default function CreatorPage() {
                   <div className="aspect-square relative">
                     <img src={creator.image || "/placeholder.svg"} alt={creator.name} className="w-full h-full object-cover" />
                   </div>
-                  <CardContent className="p-3 text-center">
-                    <p className="font-medium truncate mb-2">{creator.name}</p>
-                    {creator.tags && creator.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-1 justify-center">
-                        {creator.tags.map((tag, tagIndex) => (
-                          <Badge
-                            key={tagIndex}
-                            variant="secondary"
-                            className="text-xs"
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-                    )}
+                  <CardContent className="p-3 text-center h-[132px] flex flex-col">
+                    <p className="font-medium truncate mb-2 shrink-0">{creator.name}</p>
+                    <div className="flex-1 flex items-start justify-center overflow-hidden">
+                      {creator.tags && creator.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1 justify-center content-start">
+                          {creator.tags.map((tag, tagIndex) => (
+                            <Badge
+                              key={tagIndex}
+                              variant="secondary"
+                              className="text-[10px] px-2 py-0.5 leading-tight"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               </CardWrapper>
