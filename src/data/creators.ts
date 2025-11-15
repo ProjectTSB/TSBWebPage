@@ -54,11 +54,9 @@ export const creators: Creator[] = [
   { name: "こま", image: "https://cdn.discordapp.com/avatars/280371481404375040/afa39681597535271321eb493a1d7e6b.png?size=256", link: "https://discord.com/users/280371481404375040" },
   { name: "なれんじ", image: "https://cdn.discordapp.com/avatars/287781483836342272/aa515f78e24cab15c61216164345ceab.png?size=256", link: "https://discord.com/users/287781483836342272", tags: ["神器開発班"] },
   { name: "ハル", image: "https://cdn.discordapp.com/avatars/283035571096518657/e574ae2cd83b1dffa92929d97e49c988.png?size=256", link: "https://discord.com/users/283035571096518657", tags: ["管理者", "神器開発班"] },
-  { name: "瑠璃のサブ", image: "https://cdn.discordapp.com/avatars/715443353105334292/353ce06f55b0c1e9a3fa8a5d9ad8c04b.png?size=256", link: "https://discord.com/users/715443353105334292" },
   { name: "トミー", image: "https://cdn.discordapp.com/avatars/294691527207288833/5cef2414c33b7465eff14ba85eed5db5.png?size=256", link: "https://discord.com/users/294691527207288833" },
   { name: "ふろーら", image: "https://cdn.discordapp.com/avatars/287778233703989248/8a00adea408180cb77551a3bd04d0673.png?size=256", link: "https://discord.com/users/287778233703989248", tags: ["神器開発班", "建築班"] },
   { name: "ノータッチ", image: "https://cdn.discordapp.com/avatars/275316020170850305/388788d0a9d74f7951d0d03f23bb9577.png?size=256", link: "https://discord.com/users/275316020170850305", tags: ["建築班"] },
-  { name: "HAL", image: "https://cdn.discordapp.com/avatars/718374095137407079/eec9cd998bf69dbbe06e95cfbc96ff03.png?size=256", link: "https://discord.com/users/718374095137407079", tags: ["リソース班", "バランス調整班"] },
   { name: "kaputina", image: "https://cdn.discordapp.com/avatars/490522733848035358/8834348ba52138d9777fe030e3818b42.png?size=256", link: "https://discord.com/users/490522733848035358", tags: ["神器開発班"] },
   { name: "逢坂", image: "https://cdn.discordapp.com/avatars/350600819562774529/c9015d434bb0c2869c4b1e798eabd362.png?size=256", link: "https://discord.com/users/350600819562774529" }
 ]
