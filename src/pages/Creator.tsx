@@ -1,9 +1,15 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { creators } from "@/data/creators"
 
 export default function CreatorPage() {
+  // 名前でソート（日本語対応）
+  const sortedCreators = [...creators].sort((a, b) =>
+    a.name.localeCompare(b.name, 'ja', { numeric: true, sensitivity: 'base' })
+  )
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -14,7 +20,7 @@ export default function CreatorPage() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          {creators.map((creator, index) => {
+          {sortedCreators.map((creator, index) => {
             const CardWrapper = creator.link ? 'a' : 'div'
             const cardProps = creator.link
               ? { href: creator.link, target: "_blank", rel: "noopener noreferrer" }
@@ -27,7 +33,20 @@ export default function CreatorPage() {
                     <img src={creator.image || "/placeholder.svg"} alt={creator.name} className="w-full h-full object-cover" />
                   </div>
                   <CardContent className="p-3 text-center">
-                    <p className="font-medium truncate">{creator.name}</p>
+                    <p className="font-medium truncate mb-2">{creator.name}</p>
+                    {creator.tags && creator.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {creator.tags.map((tag, tagIndex) => (
+                          <Badge
+                            key={tagIndex}
+                            variant="secondary"
+                            className="text-xs"
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </CardWrapper>
