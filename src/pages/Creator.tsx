@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
-import { PersonIcon } from "@radix-ui/react-icons"
 import { creators } from "@/data/creators"
 
 export default function CreatorPage() {
@@ -17,7 +16,7 @@ export default function CreatorPage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {creators.map((creator, index) => {
             const CardWrapper = creator.link ? 'a' : 'div'
-            const cardProps = creator.link 
+            const cardProps = creator.link
               ? { href: creator.link, target: "_blank", rel: "noopener noreferrer" }
               : {}
 
@@ -55,4 +54,4 @@ export default function CreatorPage() {
       <Footer />
     </div>
   )
-} 
+}
