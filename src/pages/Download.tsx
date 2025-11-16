@@ -60,13 +60,13 @@ export default function DownloadPage() {
                     <DialogHeader>
                       <DialogTitle>ダウンロード・詳細情報</DialogTitle>
                     </DialogHeader>
-                    
+
                     <div className="space-y-6">
                       {/* ダウンロードボタン */}
                       <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
                         <h3 className="font-bold mb-3 text-green-800 dark:text-green-300">マップ本体</h3>
-                        <a 
-                            href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/TheSkyBlessing.zip" 
+                        <a
+                            href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/TheSkyBlessing.zip"
                             className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -82,8 +82,8 @@ export default function DownloadPage() {
                           <div>
                             <span className="font-semibold">データパック:</span>
                             <br />
-                            <a 
-                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/datapacks.zip" 
+                            <a
+                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/datapacks.zip"
                               className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -94,8 +94,8 @@ export default function DownloadPage() {
                           <div>
                             <span className="font-semibold">リソースパック:</span>
                             <br />
-                            <a 
-                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/resources.zip" 
+                            <a
+                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/resources.zip"
                               className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -157,7 +157,7 @@ export default function DownloadPage() {
               </div>
 
               <Button asChild className="w-full">
-                <a href="https://discord.com/invite/vPqHuQNMEv">
+                <a href="https://project-tsb.org/discord">
                   <DownloadIcon className="mr-2 h-4 w-4" />
                   Discord サーバーでダウンロード
                 </a>
@@ -198,7 +198,7 @@ export default function DownloadPage() {
 
             <div className="mb-6">
               <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">リソースパックの更新方法</h3>
-              
+
               <div className="mb-6">
                 <h4 className="font-semibold text-md mb-3 text-green-700">シングルプレイの場合</h4>
                 <ol className="list-decimal list-inside space-y-3 pl-2">
@@ -228,4 +228,4 @@ export default function DownloadPage() {
       <Footer />
     </div>
   )
-} 
+}

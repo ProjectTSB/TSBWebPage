@@ -10,8 +10,8 @@ export interface SocialLink {
 }
 
 export const socialLinks = [
-  { name: "Discord", path: "https://discord.com/invite/vPqHuQNMEv", icon: FaDiscord },
+  { name: "Discord", path: "https://project-tsb.org/discord", icon: FaDiscord },
   { name: "X", path: "https://x.com/TheSkyBlessing", icon: FaXTwitter },
   { name: "YouTube", path: "https://www.youtube.com/@TheSkyBlessing", icon: FaYoutube },
   { name: "GitHub", path: "https://github.com/ProjectTSB", icon: FaGithub },
-] 
+]
