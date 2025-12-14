@@ -15,7 +15,7 @@ export function HeroSection() {
           <img
             src={Logo}
             alt="The Sky Blessing"
-            className="mx-auto max-w-[700px] w-full h-auto"
+            className="mx-auto max-w-[730px] w-full h-auto"
           />
         </div>
       </div>

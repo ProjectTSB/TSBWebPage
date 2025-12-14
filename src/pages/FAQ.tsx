@@ -8,7 +8,7 @@ export default function FAQPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-1 py-12 px-4 md:px-8 max-w-5xl mx-auto">
+      <main className="flex-1 py-12 px-4 md:px-8 w-full max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">よくある質問</h1>
 
         <Accordion type="single" collapsible className="w-full">
@@ -36,4 +36,4 @@ export default function FAQPage() {
       <Footer />
     </div>
   )
-} 
+}
