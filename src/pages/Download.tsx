@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { ExclamationTriangleIcon, DownloadIcon } from "@radix-ui/react-icons"
+import { stableVersion, latestVersion } from "@/data/download"
 
 export default function DownloadPage() {
   return (
@@ -42,10 +43,10 @@ export default function DownloadPage() {
 
               <div className="bg-muted p-4 rounded-lg mb-4 h-40">
                 <h3 className="font-bold mb-2">バージョン</h3>
-                <p>v0.1.6</p>
+                <p>{stableVersion.version}</p>
 
                 <h3 className="font-bold mt-4 mb-2">対象 Minecraft バージョン</h3>
-                <p>1.19 ~ 1.19.2</p>
+                <p>{stableVersion.minecraftVersion}</p>
               </div>
 
               <div>
@@ -66,7 +67,7 @@ export default function DownloadPage() {
                       <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
                         <h3 className="font-bold mb-3 text-green-800 dark:text-green-300">マップ本体</h3>
                         <a
-                            href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/TheSkyBlessing.zip"
+                            href={stableVersion.mapDownloadUrl}
                             className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -83,7 +84,7 @@ export default function DownloadPage() {
                             <span className="font-semibold">データパック:</span>
                             <br />
                             <a
-                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/datapacks.zip"
+                              href={stableVersion.datapackUrl}
                               className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -95,7 +96,7 @@ export default function DownloadPage() {
                             <span className="font-semibold">リソースパック:</span>
                             <br />
                             <a
-                              href="https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v0.1.6/resources.zip"
+                              href={stableVersion.resourcePackUrl}
                               className="text-blue-600 dark:text-blue-400 hover:underline break-all"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -114,7 +115,7 @@ export default function DownloadPage() {
                             <span className="font-semibold">URL:</span>
                             <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
                               <code className="text-xs break-all">
-                                https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v0.1.6/resources.zip
+                                {stableVersion.multiplayResourcePackUrl}
                               </code>
                             </div>
                           </div>
@@ -122,7 +123,7 @@ export default function DownloadPage() {
                             <span className="font-semibold">SHA1:</span>
                             <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
                               <code className="text-xs">
-                                ed1e3fd2c5eaad147d8d55b17ab1585121be59c9
+                                {stableVersion.resourcePackSha1}
                               </code>
                             </div>
                           </div>
@@ -150,14 +151,14 @@ export default function DownloadPage() {
 
               <div className="bg-muted p-4 rounded-lg mb-4 h-40">
                 <h3 className="font-bold mb-2">バージョン</h3>
-                <p>v1.0.0</p>
+                <p>{latestVersion.version}</p>
 
                 <h3 className="font-bold mt-4 mb-2">対象 Minecraft バージョン</h3>
-                <p>1.20.4</p>
+                <p>{latestVersion.minecraftVersion}</p>
               </div>
 
               <Button asChild className="w-full">
-                <a href="https://project-tsb.org/discord">
+                <a href={latestVersion.discordUrl}>
                   <DownloadIcon className="mr-2 h-4 w-4" />
                   Discord サーバーでダウンロード
                 </a>
