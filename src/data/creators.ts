@@ -16,6 +16,8 @@ export interface Creator {
 }
 
 export const creators: Creator[] = [
+  { name: "ハル", image: "https://cdn.discordapp.com/avatars/283035571096518657/e574ae2cd83b1dffa92929d97e49c988.png?size=256", link: "https://discord.com/users/283035571096518657", role: "プロジェクトオーナー", tags: ["管理者", "神器開発班"] },
+  { name: "ちぇん", image: "https://cdn.discordapp.com/avatars/299512294994345985/fa76e4c11fb0209ac33d6c3e53aec7ad.png?size=256", link: "https://discord.com/users/299512294994345985", role: "プロジェクトリーダー", tags: ["神器開発班", "モブ開発班", "バランス調整班"] },
   { name: "はいいろ", image: "https://cdn.discordapp.com/avatars/423751993400492033/2229fd633b04dbb2552cb78eb49eb11b.png?size=256", link: "https://discord.com/users/423751993400492033", tags: ["神器開発班", "モブ開発班"] },
   { name: "uran", image: "https://cdn.discordapp.com/avatars/293673347701669888/b463a7f464cb2a11ee97489943f0953c.png?size=256", link: "https://discord.com/users/293673347701669888", tags: ["神器開発班", "モブ開発班", "建築班", "リソース班"] },
   { name: "瑠璃", image: "https://cdn.discordapp.com/avatars/586512673668071424/98114e8ad6525740365b9445f279c1c1.png?size=256", link: "https://discord.com/users/586512673668071424", tags: ["神器開発班", "モブ開発班"] },
@@ -30,7 +32,6 @@ export const creators: Creator[] = [
   { name: "Piano58", image: "https://cdn.discordapp.com/avatars/230955669597978624/4327d42b83dabe3be9e09622eb20c234.png?size=256", link: "https://discord.com/users/230955669597978624" },
   { name: "氷鮭", image: "https://cdn.discordapp.com/avatars/581459644552052740/8d76f40f935995b752ee0a5e24ea9386.png?size=256", link: "https://discord.com/users/581459644552052740", tags: ["建築班"] },
   { name: "nemo", image: "https://cdn.discordapp.com/avatars/698372071066959914/b6ab049d7ee0fbc95d19239cdea10d3f.png?size=256", link: "https://discord.com/users/698372071066959914" },
-  { name: "ちぇん", image: "https://cdn.discordapp.com/avatars/299512294994345985/fa76e4c11fb0209ac33d6c3e53aec7ad.png?size=256", link: "https://discord.com/users/299512294994345985", tags: ["神器開発班", "モブ開発班", "バランス調整班"] },
   { name: "prince", image: "https://cdn.discordapp.com/avatars/472308859235467274/7dfee1c4a23da648957a2ef1386ae0ae.png?size=256", link: "https://discord.com/users/472308859235467274" },
   { name: "Chuzume", image: "https://cdn.discordapp.com/avatars/235404800685113346/35a2d99d3c7b3f2e22c98f3df67a8970.png?size=256", link: "https://discord.com/users/235404800685113346", tags: ["神器開発班", "モブ開発班", "建築班", "リソース班"] },
   { name: "Ella Coat", image: "https://cdn.discordapp.com/avatars/555609446051741697/a_1939f7a6566b1818c403b3e67261c304.gif?size=256", link: "https://discord.com/users/555609446051741697", tags: ["神器開発班", "モブ開発班", "建築班", "リソース班"] },
@@ -53,7 +54,6 @@ export const creators: Creator[] = [
   { name: "kiwi", image: "https://cdn.discordapp.com/avatars/288955969504018442/4c410828b6e585f9f46b8908785e4634.png?size=256", link: "https://discord.com/users/288955969504018442" },
   { name: "こま", image: "https://cdn.discordapp.com/avatars/280371481404375040/afa39681597535271321eb493a1d7e6b.png?size=256", link: "https://discord.com/users/280371481404375040" },
   { name: "なれんじ", image: "https://cdn.discordapp.com/avatars/287781483836342272/aa515f78e24cab15c61216164345ceab.png?size=256", link: "https://discord.com/users/287781483836342272", tags: ["神器開発班"] },
-  { name: "ハル", image: "https://cdn.discordapp.com/avatars/283035571096518657/e574ae2cd83b1dffa92929d97e49c988.png?size=256", link: "https://discord.com/users/283035571096518657", tags: ["管理者", "神器開発班"] },
   { name: "トミー", image: "https://cdn.discordapp.com/avatars/294691527207288833/5cef2414c33b7465eff14ba85eed5db5.png?size=256", link: "https://discord.com/users/294691527207288833" },
   { name: "ふろーら", image: "https://cdn.discordapp.com/avatars/287778233703989248/8a00adea408180cb77551a3bd04d0673.png?size=256", link: "https://discord.com/users/287778233703989248", tags: ["神器開発班", "建築班"] },
   { name: "ノータッチ", image: "https://cdn.discordapp.com/avatars/275316020170850305/388788d0a9d74f7951d0d03f23bb9577.png?size=256", link: "https://discord.com/users/275316020170850305", tags: ["建築班"] },
