@@ -158,7 +158,7 @@ export default function DownloadPage() {
               </div>
 
               <Button asChild className="w-full">
-                <a href={latestVersion.discordUrl}>
+                <a href={latestVersion.discordUrl} target="_blank" rel="noopener">
                   <DownloadIcon className="mr-2 h-4 w-4" />
                   Discord サーバーでダウンロード
                 </a>
