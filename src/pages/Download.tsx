@@ -72,7 +72,7 @@ export default function DownloadPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                             >
-                          安定板をダウンロード
+                          安定版をダウンロード
                         </a>
                       </div>
 
