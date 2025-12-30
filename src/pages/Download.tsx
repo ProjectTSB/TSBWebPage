@@ -8,6 +8,9 @@ import { ExclamationTriangleIcon, DownloadIcon, OpenInNewWindowIcon } from "@rad
 import { stableVersion, latestVersion } from "@/data/download"
 
 export default function DownloadPage() {
+  // 安定版と最新版が同じバージョンかチェック
+  const isSameVersion = stableVersion.version === latestVersion.version
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -136,7 +139,7 @@ export default function DownloadPage() {
             </CardContent>
           </Card>
 
-          <Card className="h-full flex flex-col">
+          <Card className={`h-full flex flex-col ${isSameVersion ? 'opacity-50' : ''}`}>
             <CardHeader>
               <CardTitle className="text-2xl">最新版</CardTitle>
             </CardHeader>
@@ -157,12 +160,19 @@ export default function DownloadPage() {
                 <p>{latestVersion.minecraftVersion}</p>
               </div>
 
-              <Button asChild className="w-full">
-                <a href={latestVersion.discordUrl} target="_blank" rel="noopener">
+              {isSameVersion ? (
+                <Button disabled className="w-full">
                   <OpenInNewWindowIcon className="mr-2 h-4 w-4" />
                   Discord サーバーでダウンロード
-                </a>
-              </Button>
+                </Button>
+              ) : (
+                <Button asChild className="w-full">
+                  <a href={latestVersion.discordUrl}>
+                    <OpenInNewWindowIcon className="mr-2 h-4 w-4" />
+                    Discord サーバーでダウンロード
+                  </a>
+                </Button>
+              )}
             </CardContent>
           </Card>
         </div>
