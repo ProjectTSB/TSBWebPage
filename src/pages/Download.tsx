@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { ExclamationTriangleIcon, DownloadIcon } from "@radix-ui/react-icons"
+import { ExclamationTriangleIcon, DownloadIcon, OpenInNewWindowIcon } from "@radix-ui/react-icons"
 import { stableVersion, latestVersion } from "@/data/download"
 
 export default function DownloadPage() {
@@ -162,13 +162,13 @@ export default function DownloadPage() {
 
               {isSameVersion ? (
                 <Button disabled className="w-full">
-                  <DownloadIcon className="mr-2 h-4 w-4" />
+                  <OpenInNewWindowIcon className="mr-2 h-4 w-4" />
                   Discord サーバーでダウンロード
                 </Button>
               ) : (
                 <Button asChild className="w-full">
                   <a href={latestVersion.discordUrl}>
-                    <DownloadIcon className="mr-2 h-4 w-4" />
+                    <OpenInNewWindowIcon className="mr-2 h-4 w-4" />
                     Discord サーバーでダウンロード
                   </a>
                 </Button>
