@@ -1,0 +1,41 @@
+name: Update Discord avatars
+
+on:
+  schedule:
+    # 毎日 00:00 UTC に実行（日本時間 09:00）
+    - cron: "0 0 * * *"
+  # 手動実行用
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-discord-avatars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update creator avatars
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+        run: node scripts/update-discord-avatars.mjs
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/creators.ts
+          git commit -m "chore: update discord avatars"
+          git push
