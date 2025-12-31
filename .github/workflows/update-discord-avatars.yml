@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-discord-avatars:
@@ -28,14 +29,23 @@ jobs:
           DRY_RUN: ${{ vars.DRY_RUN }}
         run: node scripts/update-discord-avatars.mjs
 
-      - name: Commit changes
-        run: |
-          if git diff --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/creators.ts
-          git commit -m "Discordアバターを更新"
-          git push
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: Discordアバターを更新
+          branch: bot/update-discord-avatars
+          delete-branch: true
+          title: "🤖 Discordアバターを自動更新"
+          body: |
+            Discord API から最新のアバター画像を取得して更新しました。
+
+            - 自動生成されたPRです
+            - 必須チェックが通過したら自動的にマージされます
+          labels: bot
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge --auto --squash ${{ steps.cpr.outputs.pull-request-number }}
