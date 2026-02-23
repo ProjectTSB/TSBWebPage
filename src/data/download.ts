@@ -16,17 +16,17 @@ export interface LatestVersionInfo extends VersionInfo {
 }
 
 export const stableVersion: StableVersionInfo = {
-  version: "v1.0.5",
+  version: "v1.0.6",
   minecraftVersion: "1.20.4",
-  mapDownloadUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.5/TheSkyBlessing.zip",
-  datapackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.5/datapacks.zip",
-  resourcePackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.5/resources.zip",
-  multiplayResourcePackUrl: "https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v1.0.5/resources.zip",
-  resourcePackSha1: "d43aa650558cac9262045bedf3e6f7501100233e",
+  mapDownloadUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6/TheSkyBlessing.zip",
+  datapackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6/datapacks.zip",
+  resourcePackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6/resources.zip",
+  multiplayResourcePackUrl: "https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v1.0.6/resources.zip",
+  resourcePackSha1: "b1eb7500e5f03e4f1def6fb43b05a017b70050ff",
 }
 
 export const latestVersion: LatestVersionInfo = {
-  version: "v1.0.5",
+  version: "v1.0.6",
   minecraftVersion: "1.20.4",
   discordUrl: "https://project-tsb.org/discord",
 }
