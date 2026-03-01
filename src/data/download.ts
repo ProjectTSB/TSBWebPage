@@ -22,7 +22,7 @@ export const stableVersion: StableVersionInfo = {
   datapackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6/datapacks.zip",
   resourcePackUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6/resources.zip",
   multiplayResourcePackUrl: "https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v1.0.6/resources.zip",
-  resourcePackSha1: "b1eb7500e5f03e4f1def6fb43b05a017b70050ff",
+  resourcePackSha1: "0360d3e3b5a1e8b8e9f3e15b2fdc2caaa601a403",
 }
 
 export const latestVersion: LatestVersionInfo = {
