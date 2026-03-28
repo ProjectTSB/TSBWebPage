@@ -1,15 +1,15 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { ExclamationTriangleIcon, DownloadIcon, OpenInNewWindowIcon } from "@radix-ui/react-icons"
-import { stableVersion, latestVersion } from "@/data/download"
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ExclamationTriangleIcon, DownloadIcon, OpenInNewWindowIcon } from "@radix-ui/react-icons";
+import { stableVersion, latestVersion } from "@/data/download";
 
 export default function DownloadPage() {
   // 安定版と最新版が同じバージョンかチェック
-  const isSameVersion = stableVersion.version === latestVersion.version
+  const isSameVersion = stableVersion.version === latestVersion.version;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -70,18 +70,20 @@ export default function DownloadPage() {
                       <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
                         <h3 className="font-bold mb-3 text-green-800 dark:text-green-300">マップ本体</h3>
                         <a
-                            href={stableVersion.mapDownloadUrl}
-                            className="text-blue-600 dark:text-blue-400 hover:underline break-all"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
+                          href={stableVersion.mapDownloadUrl}
+                          className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           安定版をダウンロード
                         </a>
                       </div>
 
                       {/* 過去バージョンからのアップデート情報 */}
                       <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg">
-                        <h3 className="font-bold mb-3 text-blue-800 dark:text-blue-300">過去バージョンからのアップデート</h3>
+                        <h3 className="font-bold mb-3 text-blue-800 dark:text-blue-300">
+                          過去バージョンからのアップデート
+                        </h3>
                         <div className="space-y-3 text-sm">
                           <div>
                             <span className="font-semibold">データパック:</span>
@@ -112,22 +114,20 @@ export default function DownloadPage() {
 
                       {/* マルチプレイのリソースパック情報 */}
                       <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded-lg">
-                        <h3 className="font-bold mb-3 text-purple-800 dark:text-purple-300">マルチプレイのリソースパック情報</h3>
+                        <h3 className="font-bold mb-3 text-purple-800 dark:text-purple-300">
+                          マルチプレイのリソースパック情報
+                        </h3>
                         <div className="space-y-3 text-sm">
                           <div>
                             <span className="font-semibold">URL:</span>
                             <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
-                              <code className="text-xs break-all">
-                                {stableVersion.multiplayResourcePackUrl}
-                              </code>
+                              <code className="text-xs break-all">{stableVersion.multiplayResourcePackUrl}</code>
                             </div>
                           </div>
                           <div>
                             <span className="font-semibold">SHA1:</span>
                             <div className="mt-1 p-2 bg-gray-100 dark:bg-gray-800 rounded border">
-                              <code className="text-xs">
-                                {stableVersion.resourcePackSha1}
-                              </code>
+                              <code className="text-xs">{stableVersion.resourcePackSha1}</code>
                             </div>
                           </div>
                         </div>
@@ -139,7 +139,7 @@ export default function DownloadPage() {
             </CardContent>
           </Card>
 
-          <Card className={`h-full flex flex-col ${isSameVersion ? 'opacity-50' : ''}`}>
+          <Card className={`h-full flex flex-col ${isSameVersion ? "opacity-50" : ""}`}>
             <CardHeader>
               <CardTitle className="text-2xl">最新版</CardTitle>
             </CardHeader>
@@ -149,7 +149,8 @@ export default function DownloadPage() {
                 <br />
                 ただし、新要素が追加された直後等はバランス調整ミスや重篤な不具合が存在する可能性があります。
                 <br />
-                このバージョンは、お問い合わせやサポートが簡単に行えるよう公式 Discord サーバーでのみダウンロードすることが出来ます。
+                このバージョンは、お問い合わせやサポートが簡単に行えるよう公式 Discord
+                サーバーでのみダウンロードすることが出来ます。
               </p>
 
               <div className="bg-muted p-4 rounded-lg mb-4 h-40">
@@ -182,19 +183,24 @@ export default function DownloadPage() {
           <CardContent className="pt-6">
             <div className="bg-blue-50 p-4 rounded-lg mb-6">
               <p className="text-blue-800">
-                このマップに使用されているデータパック / リソースパックを手動で更新していただく事で、現在遊ばれているマップに対して不具合修正や仕様変更等を適用することが可能です。
+                このマップに使用されているデータパック /
+                リソースパックを手動で更新していただく事で、現在遊ばれているマップに対して不具合修正や仕様変更等を適用することが可能です。
                 <br />
                 現在遊ばれている The Sky Blessing のバージョンを確認し、手動更新が可能なバージョンかをご確認ください。
               </p>
             </div>
 
             <div className="mb-8">
-              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">バージョンの確認方法</h3>
+              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">
+                バージョンの確認方法
+              </h3>
               <p className="bg-gray-50 p-3 rounded">マップデータに同梱されているReadme.txtをご確認ください。</p>
             </div>
 
             <div className="mb-8">
-              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">データパックの更新方法</h3>
+              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">
+                データパックの更新方法
+              </h3>
               <ol className="list-decimal list-inside space-y-3 pl-2">
                 <li>現在遊ばれているマップのワールドデータをバックアップしてください。</li>
                 <li>
@@ -208,7 +214,9 @@ export default function DownloadPage() {
             </div>
 
             <div className="mb-6">
-              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">リソースパックの更新方法</h3>
+              <h3 className="font-bold text-lg mb-3 text-gray-800 border-b border-gray-200 pb-2">
+                リソースパックの更新方法
+              </h3>
 
               <div className="mb-6">
                 <h4 className="font-semibold text-md mb-3 text-green-700">シングルプレイの場合</h4>
@@ -238,5 +246,5 @@ export default function DownloadPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
