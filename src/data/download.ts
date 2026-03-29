@@ -15,6 +15,15 @@ export interface LatestVersionInfo extends VersionInfo {
   discordUrl: string
 }
 
+export interface SpecialVersionInfo extends VersionInfo {
+  id: string
+  name: string
+  description: string[]
+  mapDownloadUrl: string
+  multiplayResourcePackUrl: string
+  resourcePackSha1: string
+}
+
 export const stableVersion: StableVersionInfo = {
   version: "v1.0.6",
   minecraftVersion: "1.20.4",
@@ -30,3 +39,6 @@ export const latestVersion: LatestVersionInfo = {
   minecraftVersion: "1.20.4",
   discordUrl: "https://project-tsb.org/discord",
 }
+
+export const specialVersions: SpecialVersionInfo[] = [
+]
