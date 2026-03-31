@@ -41,4 +41,14 @@ export const latestVersion: LatestVersionInfo = {
 }
 
 export const specialVersions: SpecialVersionInfo[] = [
+  {
+    id: "v1.0.6-afd26sheep",
+    name: "2026/04/01 v1.0.6-afd26sheep",
+    description: ["本ﾒｪｰｰョンには、ﾒｪｰｰｰｰ加 が含まれています。","また、既知のﾒｪｰｰとして、ﾒｪｰｰ島のテレポータﾒｪｰｰべる先がおかしくﾒｪｰｰｰｰｰｰｰｰｰｰｰます。"],
+    mapDownloadUrl: "https://github.com/ProjectTSB/TheSkyBlessing/releases/download/v1.0.6-afd26sheep/TheSkyBlessing.zip",
+    multiplayResourcePackUrl: "https://github.com/ProjectTSB/TSB-ResourcePack/releases/download/v1.0.6-afd26sheep/resources.zip",
+    resourcePackSha1: "e548d31368780d7b379b6458bd08bd53cb4d90db",
+    version: "v1.0.6-afd26sheep",
+    minecraftVersion: "1.20.4",
+  }
 ]
