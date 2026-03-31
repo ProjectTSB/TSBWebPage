@@ -6,7 +6,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ExclamationTriangleIcon, DownloadIcon, OpenInNewWindowIcon } from "@radix-ui/react-icons";
 import { stableVersion, latestVersion, specialVersions } from "@/data/download";
-import { Fragment } from "react/jsx-runtime";
+import { Fragment } from "react";
 import { useSearchParams } from "react-router-dom";
 
 export default function DownloadPage() {
