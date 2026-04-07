@@ -58,10 +58,18 @@ export function MobileMenu({ isOpen, onOpenChange }: MobileMenuProps) {
                   </a>
                 )
               })}
+              <a
+                href="https://tsb.booth.pm/"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BOOTH
+              </a>
             </div>
           </div>
         </div>
       )}
     </div>
   )
-} 
+}

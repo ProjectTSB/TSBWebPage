@@ -20,7 +20,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12">
           <div className="flex flex-col gap-2">
             <h3 className="font-medium text-cyan-600">マップ</h3>
             <div className="flex flex-col gap-1">
@@ -56,7 +56,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 col-span-2 md:col-span-1">
+          <div className="flex flex-col gap-2">
+            <h3 className="font-medium text-sky-600">支援</h3>
+            <div className="flex flex-col gap-1">
+              <a href="https://tsb.booth.pm/" className="text-sm text-muted-foreground hover:text-sky-500" target="_blank" rel="noopener noreferrer">
+                BOOTH
+              </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
             <h3 className="font-medium text-sky-600">サポート</h3>
             <div className="flex flex-col gap-1">
               <a href="https://scriptarts.jp/" className="text-sm text-muted-foreground hover:text-sky-500">
