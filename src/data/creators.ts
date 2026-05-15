@@ -59,5 +59,6 @@ export const creators: Creator[] = [
   { name: "ノータッチ", image: "https://cdn.discordapp.com/avatars/275316020170850305/388788d0a9d74f7951d0d03f23bb9577.png?size=256", link: "https://discord.com/users/275316020170850305", tags: ["建築班"] },
   { name: "kaputina", image: "https://cdn.discordapp.com/avatars/490522733848035358/8834348ba52138d9777fe030e3818b42.png?size=256", link: "https://discord.com/users/490522733848035358", tags: ["神器開発班"] },
   { name: "逢坂", image: "https://cdn.discordapp.com/avatars/350600819562774529/c9015d434bb0c2869c4b1e798eabd362.png?size=256", link: "https://discord.com/users/350600819562774529" },
-  { name: "RED1001", image: "https://cdn.discordapp.com/avatars/308148919504863234/5554ad6fc54555162ac77ecdb441fd63.png?size=256", link: "https://discord.com/users/308148919504863234", tags: ["バランス調整班"] }
+  { name: "RED1001", image: "https://cdn.discordapp.com/avatars/308148919504863234/5554ad6fc54555162ac77ecdb441fd63.png?size=256", link: "https://discord.com/users/308148919504863234", tags: ["バランス調整班"] },
+  { name: "Air", image: "https://cdn.discordapp.com/avatars/1066562976838062160/bfb2d5605229b73dc0ceee8adb3378cd.png?size=256", link: "https://discord.com/users/1066562976838062160" },
 ]
