@@ -61,4 +61,6 @@ export const creators: Creator[] = [
   { name: "逢坂", image: "https://cdn.discordapp.com/avatars/350600819562774529/f02d6785dc51802fda025f78baa804a6.png?size=256", link: "https://discord.com/users/350600819562774529" },
   { name: "RED1001", image: "https://cdn.discordapp.com/avatars/308148919504863234/5554ad6fc54555162ac77ecdb441fd63.png?size=256", link: "https://discord.com/users/308148919504863234", tags: ["バランス調整班"] },
   { name: "Air", image: "https://cdn.discordapp.com/avatars/1066562976838062160/bfb2d5605229b73dc0ceee8adb3378cd.png?size=256", link: "https://discord.com/users/1066562976838062160" },
+  { name: "みずあめ", image: "https://cdn.discordapp.com/avatars/1081548767024652318/a92a4878a88c0d2ee63cc2958f2eff7b.png?size=256", link: "https://discord.com/users/1081548767024652318", tags: ["神器開発班", "モブ開発班", "リソース班"] },
+  { name: "おちぼ", image: "https://cdn.discordapp.com/avatars/1003141257947787324/954bbb96371c7862015a53292afae1ec.png?size=256", link: "https://discord.com/users/1003141257947787324", tags: ["リソース班"] },
 ]
