@@ -67,4 +67,5 @@ export const creators: Creator[] = [
   { name: "おがちゅー", image: "https://cdn.discordapp.com/avatars/845484302589886484/5e79667425de1f23b8d217d57c19c4e1.png?size=256", link: "https://discord.com/users/845484302589886484", tags: ["神器開発班"] },
   { name: "RandomFridge", image: "https://cdn.discordapp.com/avatars/920349196584894495/b7b2d1d20bab8531394359936b7ce0d3.png?size=256", link: "https://discord.com/users/920349196584894495", tags: ["神器開発班", "リソース班"] },
   { name: "ミディム", image: "https://cdn.discordapp.com/avatars/1012790986839175188/edd311d96464f786316ea5b66a46a8e3.png?size=256", link: "https://discord.com/users/1012790986839175188", tags: ["神器開発班", "モブ開発班"] },
+  { name: "Asphere", image: "https://cdn.discordapp.com/avatars/191184326904250368/5030c34b5e6fc6740d794c0604f0b5b7.png?size=256", link: "https://discord.com/users/191184326904250368", tags: ["神器開発班"] },
 ]
