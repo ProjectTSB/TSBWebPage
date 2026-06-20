@@ -69,4 +69,5 @@ export const creators: Creator[] = [
   { name: "ミディム", image: "https://cdn.discordapp.com/avatars/1012790986839175188/edd311d96464f786316ea5b66a46a8e3.png?size=256", link: "https://discord.com/users/1012790986839175188", tags: ["神器開発班", "モブ開発班"] },
   { name: "Asphere", image: "https://cdn.discordapp.com/avatars/191184326904250368/5030c34b5e6fc6740d794c0604f0b5b7.png?size=256", link: "https://discord.com/users/191184326904250368", tags: ["神器開発班"] },
   { name: "Leinel", image: "https://cdn.discordapp.com/avatars/939902766401335389/a18fefb449b1eda5c288872ed30a4e18.png?size=256", link: "https://discord.com/users/939902766401335389", tags: ["神器開発班"] },
+  { name: "逍遥幽霊", image: "https://cdn.discordapp.com/avatars/1226511007367827540/9ef9d5748a99f0455d43772a7eccb653.png?size=256", link: "https://discord.com/users/1226511007367827540" },
 ]
