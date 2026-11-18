@@ -16,7 +16,7 @@ export interface Creator {
 }
 
 export const creators: Creator[] = [
-  { name: "ハル", image: "https://cdn.discordapp.com/avatars/283035571096518657/e574ae2cd83b1dffa92929d97e49c988.png?size=256", link: "https://discord.com/users/283035571096518657", role: "プロジェクトオーナー", tags: ["管理者", "神器開発班"] },
+  { name: "ハル", image: "https://cdn.discordapp.com/avatars/283035571096518657/3ac507c8bf0942cd1ed3439f576f22e3.png?size=256", link: "https://discord.com/users/283035571096518657", role: "プロジェクトオーナー", tags: ["管理者", "神器開発班"] },
   { name: "ちぇん", image: "https://cdn.discordapp.com/avatars/299512294994345985/fa76e4c11fb0209ac33d6c3e53aec7ad.png?size=256", link: "https://discord.com/users/299512294994345985", role: "プロジェクトリーダー", tags: ["神器開発班", "モブ開発班", "バランス調整班"] },
   { name: "はいいろ", image: "https://cdn.discordapp.com/avatars/423751993400492033/2229fd633b04dbb2552cb78eb49eb11b.png?size=256", link: "https://discord.com/users/423751993400492033", tags: ["神器開発班", "モブ開発班"] },
   { name: "uran", image: "https://cdn.discordapp.com/avatars/293673347701669888/b463a7f464cb2a11ee97489943f0953c.png?size=256", link: "https://discord.com/users/293673347701669888", tags: ["神器開発班", "モブ開発班", "建築班", "リソース班"] },
